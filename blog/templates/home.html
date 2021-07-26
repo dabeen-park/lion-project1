@@ -2,7 +2,7 @@
 
 {% block content %}
     {% if user.is_authenticated %}
-        {{user.location}}에 사는 {{user.university}} 다니는 {{user.nickname}}님 안녕하세요.
+        {{user.location}}에 사는 {{user.university}} 에다니는 {{user.nickname}}님 안녕하세요.
     {% endif %}
     <a href = "?search=true&writer={{user.nickname}}">내가 쓴 글</a>
     <h1>Blog Project</h1>

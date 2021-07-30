@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY','0_b(d(muq95j1s$yv8cz05e^+nxfip6k!2j$=p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = (os.environ.get('DEBUG', 'True') != False) 
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*'] #어떤 주소에서 접속이 가능하냐 '*'모두다라는 의미 보안에 취약할 수도 있다.
 
 AUTH_USER_MODEL = 'account.CustomUser'
 
